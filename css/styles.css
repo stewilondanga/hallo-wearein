@@ -78,14 +78,14 @@ label {
   transition: all .2s ease
 }
 
-/*[class*="surprises"]:before{
-	background:url('https://image.flaticon.com/icons/svg/579/579007.svg')no-repeat center;
-	background-size:200px 200px;
-	display:block;
-	transform:translate(-50%,-50%) scale(1,1)
-	}
+[class*="surprises"]:before {
+  background: url('https://image.flaticon.com/icons/svg/579/579007.svg')no-repeat center;
+  background-size: 200px 200px;
+  display: block;
+  transform: translate(-50%, -50%) scale(1, 1)
+}
 
-[class*="surprises"]:after
+/*[class*="surprises"]:after
 	{display:none;transform:translate(-50%,-50%) scale(0,0)}
 
 .surprises_1:after
