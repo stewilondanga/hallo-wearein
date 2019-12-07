@@ -85,10 +85,12 @@ label {
   transform: translate(-50%, -50%) scale(1, 1)
 }
 
-/*[class*="surprises"]:after
-	{display:none;transform:translate(-50%,-50%) scale(0,0)}
+[class*="surprises"]:after {
+  display: none;
+  transform: translate(-50%, -50%) scale(0, 0)
+}
 
-.surprises_1:after
+/*.surprises_1:after
 	{background:url('https://s.kaskus.id/images/2013/06/24/5603871_20130624065141.gif')no-repeat center / cover}
 
 .surprises_2:after
