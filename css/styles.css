@@ -108,12 +108,14 @@ input[type=checkbox]:checked~.surprises_3:before {
   transform: translate(-50%, -50%) scale(0, 0)
 }
 
-/*input[type=checkbox]:checked ~ .surprises_1:after,
-input[type=checkbox]:checked ~ .surprises_2:after,
-input[type=checkbox]:checked ~ .surprises_3:after
-	{display:block;transform:translate(-50%,-50%) scale(1,1)}
+input[type=checkbox]:checked~.surprises_1:after,
+input[type=checkbox]:checked~.surprises_2:after,
+input[type=checkbox]:checked~.surprises_3:after {
+  display: block;
+  transform: translate(-50%, -50%) scale(1, 1)
+}
 
-.containers {
+/*.containers {
   width: 520px;
   margin: 20px auto;
 }
