@@ -60,10 +60,13 @@ label {
   cursor: pointer
 }
 
-/*[class*="surprises"]
-	{top:0;left:0;position:absolute}
+[class*="surprises"] {
+  top: 0;
+  left: 0;
+  position: absolute
+}
 
-[class*="surprises"]:before,
+/*[class*="surprises"]:before,
 [class*="surprises"]:after{
 	width:100%;
 	height:100%;
