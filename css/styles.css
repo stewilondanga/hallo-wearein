@@ -26,9 +26,11 @@ body {
   justify-content: space-around
 }
 
-/*input{display:none}
+input {
+  display: none
+}
 
-.box{
+/*.box{
 	background:#fff;
 	width:300px;
 	height:250px;
