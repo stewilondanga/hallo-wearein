@@ -1,4 +1,4 @@
-body {
+/*body {
   text-align: center;
   font-family: courier;
   background-image: url("../assets/image.jpeg");
@@ -20,6 +20,87 @@ body {
 .my_social a img {
   height: 1.5em;
 }
+
+body{background: linear-gradient(90deg,rgba(74,86,157,.5),rgba(220,36,36,.5))}
+
+.container{
+	width:100%;
+	min-height:100%;
+	display:flex;
+	flex-flow:row wrap;
+	align-items:center;
+	justify-content:space-around
+	}
+
+input{display:none}
+
+.box{
+	background:#fff;
+	width:300px;
+	height:250px;
+	margin:10px;
+	position:relative;
+	border-radius:5px;
+	transition:all .5s ease;
+	box-shadow:0 8px 6px -6px #333
+	}
+
+.box:hover{box-shadow:none;transform:translateY(4px)}
+
+label,
+[class*="surprises"]{
+	width:100%;
+	height:100%;
+	display:block;
+	border-radius:5px
+	}
+
+label
+	{position:relative;z-index:1;cursor:pointer}
+
+[class*="surprises"]
+	{top:0;left:0;position:absolute}
+
+[class*="surprises"]:before,
+[class*="surprises"]:after{
+	width:100%;
+	height:100%;
+	top:50%;
+	left:50%;
+	position:absolute;
+	content:"";
+	border-radius:5px;
+	transition:all .2s ease
+	}
+
+[class*="surprises"]:before{
+	background:url('https://image.flaticon.com/icons/svg/579/579007.svg')no-repeat center;
+	background-size:200px 200px;
+	display:block;
+	transform:translate(-50%,-50%) scale(1,1)
+	}
+
+[class*="surprises"]:after
+	{display:none;transform:translate(-50%,-50%) scale(0,0)}
+
+.surprises_1:after
+	{background:url('https://s.kaskus.id/images/2013/06/24/5603871_20130624065141.gif')no-repeat center / cover}
+
+.surprises_2:after
+	{background:url('https://cdn.idntimes.com/content-images/post/20160421/giphy-e63a83a5cd513e5d9f7c120d6e884e59.gif')no-repeat center / cover}
+
+.surprises_3:after
+	{background:url('https://cdn.idntimes.com/content-images/post/20160421/seriouslyforreal1-fd5ea01fbd2b1c647acbd1b3283cb820.gif')no-repeat center / cover}
+
+input[type=checkbox]:checked ~ .surprises_1:before,
+input[type=checkbox]:checked ~ .surprises_2:before,
+input[type=checkbox]:checked ~ .surprises_3:before
+	{transform:translate(-50%,-50%) scale(0,0)}
+
+input[type=checkbox]:checked ~ .surprises_1:after,
+input[type=checkbox]:checked ~ .surprises_2:after,
+input[type=checkbox]:checked ~ .surprises_3:after
+	{display:block;transform:translate(-50%,-50%) scale(1,1)}
 
 .containers {
   width: 520px;
