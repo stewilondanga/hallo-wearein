@@ -102,12 +102,13 @@ label {
   background: url('https://cdn.idntimes.com/content-images/post/20160421/seriouslyforreal1-fd5ea01fbd2b1c647acbd1b3283cb820.gif')no-repeat center / cover
 }
 
-/*input[type=checkbox]:checked ~ .surprises_1:before,
-input[type=checkbox]:checked ~ .surprises_2:before,
-input[type=checkbox]:checked ~ .surprises_3:before
-	{transform:translate(-50%,-50%) scale(0,0)}
+input[type=checkbox]:checked~.surprises_1:before,
+input[type=checkbox]:checked~.surprises_2:before,
+input[type=checkbox]:checked~.surprises_3:before {
+  transform: translate(-50%, -50%) scale(0, 0)
+}
 
-input[type=checkbox]:checked ~ .surprises_1:after,
+/*input[type=checkbox]:checked ~ .surprises_1:after,
 input[type=checkbox]:checked ~ .surprises_2:after,
 input[type=checkbox]:checked ~ .surprises_3:after
 	{display:block;transform:translate(-50%,-50%) scale(1,1)}
