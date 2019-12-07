@@ -90,10 +90,11 @@ label {
   transform: translate(-50%, -50%) scale(0, 0)
 }
 
-/*.surprises_1:after
-	{background:url('https://s.kaskus.id/images/2013/06/24/5603871_20130624065141.gif')no-repeat center / cover}
+.surprises_1:after {
+  background: url('https://s.kaskus.id/images/2013/06/24/5603871_20130624065141.gif')no-repeat center / cover
+}
 
-.surprises_2:after
+/*.surprises_2:after
 	{background:url('https://cdn.idntimes.com/content-images/post/20160421/giphy-e63a83a5cd513e5d9f7c120d6e884e59.gif')no-repeat center / cover}
 
 .surprises_3:after
